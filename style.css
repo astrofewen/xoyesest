@@ -1,0 +1,183 @@
+html{
+    min-height: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white; 
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 2px;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6347;
+    z-index: 999999;
+    }
+    .spinner {
+        width: 40px;
+        height: 40px;
+      
+        position: relative;
+        position: absolute;
+        top: 48%;
+        left: 48%;
+      }
+      
+      .double-bounce1, .double-bounce2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #333;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+        animation: sk-bounce 2.0s infinite ease-in-out;
+      }
+      
+      .double-bounce2 {
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+      }
+      
+      @-webkit-keyframes sk-bounce {
+        0%, 100% { -webkit-transform: scale(0.0) }
+        50% { -webkit-transform: scale(1.0) }
+      }
+      
+      @keyframes sk-bounce {
+        0%, 100% { 
+          transform: scale(0.0);
+          -webkit-transform: scale(0.0);
+        } 50% { 
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+        }
+      }
+
+
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: #1C2937;
+    background-image: url(noise.gif);
+    background-repeat: repeat;
+    background-size: 40%;
+    cursor: url('logo.png') 10 12;
+}
+
+
+header{
+    height: 8%;
+}
+
+header img{
+    margin: 2%;
+    width : 4%;
+    opacity: 1;
+}
+
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.text{
+    height: 80%;
+    width: auto;
+}
+
+
+section p{
+    opacity: 1;
+    font-size: 2vw;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-style: normal;
+    -webkit-text-stroke: none;
+    left:22%;
+    top:60%;
+    position: absolute;
+    z-index: 4;
+}
+
+
+.norm{
+    opacity: 1;
+    font-size: 8vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-style: normal;
+    -webkit-text-stroke: none;
+    left:20%;
+    top:15%;
+    position: absolute;
+    z-index: 4;
+    letter-spacing: 5px;
+    line-height: 75%;
+}
+
+.line{
+    opacity: 1;
+    font-size: 8vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: transparent;
+    font-style: normal;
+    -webkit-text-stroke: 1px #ffffff ;
+    left:20%;
+    top: 15%;
+    position: absolute;
+    z-index: 7;
+    letter-spacing: 5px;
+    line-height: 75%;
+}
+
+
+
+.midimage{
+    opacity: 1;
+    top:20%;
+    left: 40%;
+    position: absolute;
+    z-index: 5;
+    min-width: 30%;
+    height: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.midimage:hover{
+    transform: scale(1.1);
+}
+
+.imgcarousel{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.img{
+    height: 50%;
+    padding: 0;
+}
