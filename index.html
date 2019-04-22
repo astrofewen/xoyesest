@@ -29,6 +29,18 @@
          </style>
 
          <script type="text/javascript">
+
+                var myVar;
+
+                function myFunction() {
+                myVar = setTimeout(showPage, 3000);
+                }
+
+                function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+                }
+
             function setNewImage(){
                 document.getElementById("img1").src ="CSS/webfront.jpg"
             }
@@ -88,14 +100,13 @@
 
     </head>
 
-    <!--CSS Spinner-->
-<div class="spinner">
-    <div class="double-bounce1"></div>
-    <div class="double-bounce2"></div>
-  </div>
-    
-    <body>
 
+    
+    <body onload="myFunction()" style="margin:0;">
+            <div id="loader">
+            </div>
+
+            <div style="display:none;" id="myDiv" class="animate-bottom">
         <header>
             <a href="">
                 <img src="CSS/logo1.png">
@@ -106,11 +117,13 @@
 
         <section class="carousel">
 
-        <div class="slides">
+            <div class="slider__indicators"></div>
+
+        <div class="slides" >
 
                 <section class="Sujet01">
                     
-                        <a href="" class="text">
+                        <a href="about.html" class="text">
                         <div >
                             <h1 class="line">
                                     À propos<br>De Xoyesest
@@ -133,7 +146,7 @@
 
                 <section class="Sujet1">
                     
-                    <a href="" class="text">
+                    <a href="web.html" class="text">
                     <div >
                         <h1 class="line">
                                 Web <br>Design
@@ -157,7 +170,7 @@
 
 
                 <section class="Sujet2">
-                    <a href="">
+                    <a href="identite.html">
                     <div >
                         <h1 class="line">
                                 Identité <br>Graphique
@@ -179,7 +192,7 @@
                 </section>
 
                 <section class="Sujet3">
-                        <a href="">
+                        <a href="illustration.html">
                         <div >
                             <h1 class="line">
                                     Illustration <br>
@@ -199,7 +212,7 @@
                     </a>
                     </section>
                     <section class="Sujet3">
-                        <a href="">
+                        <a href="motion.html">
                         <div >
                             <h1 class="line">
                                     Motion <br>Design
@@ -220,7 +233,7 @@
                     </section>
                    
                     <section class="Sujet3">
-                        <a href="">
+                        <a href="edition.html">
                         <div >
                             <h1 class="line">
                                    Édition <br>
@@ -240,7 +253,7 @@
                     </a>
                     </section>
                     <section class="Sujet3">
-                        <a href="">
+                        <a href="perso.html">
                         <div >
                             <h1 class="line">
                                     Projets <br>Personnels
@@ -262,27 +275,12 @@
                
               </div>
             </section>
+        </div>
 
               <script>
                     slider('.slides');
                   </script>
-
-
-
     </body>
 
-    <script>
-        $(document).ready(function() {
-        //Preloader
-        $(window).on("load", function() {
-        preloaderFadeOutTime = 5000;
-        function hidePreloader() {
-        var preloader = $('.spinner-wrapper');
-        preloader.fadeOut(preloaderFadeOutTime);
-        }
-        hidePreloader();
-        });
-        });
-        </script>
-   
+  
 </html>
