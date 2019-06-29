@@ -9,10 +9,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" type="text/css" href="CSS/style.css" >
-         <script type="text/javascript" src="javaindex.js"></script>
-         <script src="slider.js"></script>
-         <script src="loader.js"></script>
-         <link rel="stylesheet" href="slider.css">
          <link rel="icon" type="image/png" href="CSS/logo.png" />
 
 
@@ -28,85 +24,57 @@
                 }
          </style>
 
-         <script type="text/javascript">
-
-                var myVar;
-
-                function myFunction() {
-                myVar = setTimeout(showPage, 3000);
-                }
-
-                function showPage() {
-                document.getElementById("loader").style.display = "none";
-                document.getElementById("myDiv").style.display = "block";
-                }
-
+            <script type="text/javascript">
+                
             function setNewImage(){
                 document.getElementById("img1").src ="CSS/webfront.jpg"
             }
-
             function setOldImage(){
                 document.getElementById("img1").src="CSS/webfront2.jpg"
             }
-
             function setNewImage1(){
                 document.getElementById("img2").src ="CSS/identite.jpg"
             }
-
             function setOldImage1(){
                 document.getElementById("img2").src="CSS/identite2.jpg"
             }
-
             function setNewImage2(){
                 document.getElementById("img3").src ="CSS/illu.jpg"
             }
-
             function setOldImage2(){
                 document.getElementById("img3").src="CSS/illu2.jpg"
             }
             function setNewImage3(){
                 document.getElementById("img4").src ="CSS/motion.jpg"
             }
-
             function setOldImage3(){
                 document.getElementById("img4").src="CSS/motion2.jpg"
             }
-
             function setNewImage4(){
                 document.getElementById("img5").src ="CSS/editon.jpg"
             }
-
             function setOldImage4(){
                 document.getElementById("img5").src="CSS/editon2.jpg"
             }
-
             function setNewImage5(){
                 document.getElementById("img6").src ="CSS/perso.jpg"
             }
-
             function setOldImage5(){
                 document.getElementById("img6").src="CSS/perso2.jpg"
             }
-
             function setNewImage6(){
                 document.getElementById("img7").src ="CSS/about.jpg"
             }
-
             function setOldImage6(){
                 document.getElementById("img7").src="CSS/about2.jpg"
             }
-         </script>
-         <noscript>Your browser does not support JavaScript!</noscript>
+            </script>
+            <noscript>Your browser does not support JavaScript!</noscript>
 
+     
     </head>
 
-
-    
-    <body onload="myFunction()" style="margin:0;">
-            <div id="loader">
-            </div>
-
-            <div style="display:none;" id="myDiv" class="animate-bottom">
+    <body>
         <header>
             <a href="">
                 <img src="CSS/logo1.png">
@@ -115,171 +83,86 @@
         </header>
 
 
-        <section class="carousel">
-
-            <div class="slider__indicators"></div>
-
-        <div class="slides" >
-
-                <section class="Sujet01">
-                    
-                        <a href="about.html" class="text">  </a>
-                        <div >
-                            <h1 class="line">
-                                    À propos<br>De Xoyesest
-                            </h1>
-                        </div>
-                        <div >
-                            <h1 class="norm">
-                                    À propos<br>De Xoyesest
-                            </h1>
-                        </div>
-                        <p>01/07</p>
+        <div class="Matieres">
+            <div class="droite">
                    
-                        <div class="midimage">
-                            <div class="imgcarousel">
-                                <img id="img7" onmouseover="setNewImage6()" onmouseout="setOldImage6()" class="img" src="CSS/about2.jpg">
-                            </div>
-                        </div>
+                <a href="about.html" class="">
+                        <h1 class="line">
+                                À propos<br>De Xoyesest
+                        </h1>
+                    <img class="matierephoto" id="img7" onmouseover="setNewImage6()" onmouseout="setOldImage6()" src="CSS/about2.jpg">
+                </a>
+            </div>
+
+            <div class="gauche">
+                    
+                <a href="web.html" class="">
+                        <h1 class="lineg">
+                                Web<br>Design
+                        </h1>
+                    <img class="matierephoto" id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="CSS/webfront2.jpg">
+                </a>
+            </div>
+
+            <div class="droite">
+                    
+                <a href="identite.html" class="">
+                        <h1 class="line">
+                                Identité <br>Graphique
+                        </h1>
+                    <img class="matierephoto" id="img2" onmouseover="setNewImage1()" onmouseout="setOldImage1()" src="CSS/identite2.jpg">
+                </a>
+            </div>
+
+            
+            <div class="gauche">
                   
-                    </section>
+                <a href="illustration.html" class="">
+                        <h1 class="lineg">
+                                Illustration
+                         </h1>
+                    <img class="matierephoto" id="img3"  onmouseover="setNewImage2()" onmouseout="setOldImage2()" src="CSS/illu2.jpg">
+                </a>
+            </div>
 
-                <section class="Sujet1">
+            
+            <div class="droite">
                     
-                    <a href="web.html" class="text">    </a>
-                    <div >
+                <a href="motion.html" class="">
                         <h1 class="line">
-                                Web <br>Design
-                        </h1>
-                    </div>
-                    <div >
-                        <h1 class="norm">
-                                Web <br>Design
-                        </h1>
-                    </div>
-                    <p>02/07</p>
-               
-                    <div class="midimage">
-                        <div class="imgcarousel">
-                            <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" class="img" src="CSS/webfront2.jpg">
-                        </div>
-                    </div>
+                                Motion <br>Design
+                         </h1>
+                    <img class="matierephoto" id="img4" onmouseover="setNewImage3()" onmouseout="setOldImage3()" src="CSS/motion2.jpg">
+                </a>
+            </div>
             
-                </section>
+            <div class="gauche">
+                    
+                <a href="edition.html" class="">
+                        <h1 class="lineg">
+                                Édition
+                        </h1>
+                    <img class="matierephoto" id="img5" onmouseover="setNewImage4()" onmouseout="setOldImage4()" src="CSS/editon2.jpg">
+                </a>
+            </div>
 
-
-
-                <section class="Sujet2">
-                    <a href="identite.html">    </a>
-                    <div >
+            <div class="droite">
+                   
+                <a href="perso.html" class="">
                         <h1 class="line">
-                                Identité <br>Graphique
+                                Projets<br>Personnels
                         </h1>
-                    </div>
-                    <div >
-                        <h1 class="norm">
-                                Identité <br>Graphique
-                        </h1>
-                    </div>
-                    <p>03/07
-                    </p>
-                    <div class="midimage">
-                        <div class="imgcarousel">
-                                <img id="img2" onmouseover="setNewImage1()" onmouseout="setOldImage1()" class="img" src="CSS/identite2.jpg">
-                        </div>
-                    </div>
-            
-                </section>
+                    <img class="matierephoto" id="img6" onmouseover="setNewImage5()" onmouseout="setOldImage5()" src="CSS/perso2.jpg">
+                </a>
+            </div>
 
-                <section class="Sujet3">
-                        <a href="illustration.html">   </a>
-                        <div >
-                            <h1 class="line">
-                                    Illustration <br>
-                            </h1>
-                        </div>
-                        <div >
-                            <h1 class="norm">
-                                    Illustration <br>
-                            </h1>
-                        </div>
-                        <p>04/07</p>
-                        <div class="midimage">
-                            <div class="imgcarousel">
-                                <img id="img3" onmouseover="setNewImage2()" onmouseout="setOldImage2()" class="img"  src="CSS/illu2.jpg">
-                            </div>
-                        </div>
-                 
-                    </section>
-                    <section class="Sujet3">
-                        <a href="motion.html"> </a>
-                        <div >
-                            <h1 class="line">
-                                    Motion <br>Design
-                            </h1>
-                        </div>
-                        <div >
-                            <h1 class="norm">
-                                   Motion <br>Design
-                            </h1>
-                        </div>
-                        <p>05/07</p>
-                        <div class="midimage">
-                            <div class="imgcarousel">
-                                <img id="img4" onmouseover="setNewImage3()" onmouseout="setOldImage3()" class="img" src="CSS/motion2.jpg">
-                            </div>
-                        </div>
-                   
-                    </section>
-                   
-                    <section class="Sujet3">
-                        <a href="edition.html">   </a>
-                        <div >
-                            <h1 class="line">
-                                   Édition <br>
-                            </h1>
-                        </div>
-                        <div >
-                            <h1 class="norm">
-                                Édition <br>
-                            </h1>
-                        </div>
-                        <p>06/07</p>
-                        <div class="midimage">
-                            <div class="imgcarousel">
-                                <img id="img5" onmouseover="setNewImage4()" onmouseout="setOldImage4()" class="img" src="CSS/editon2.jpg">
-                            </div>
-                        </div>
-                 
-                    </section>
-                    <section class="Sujet3">
-                        <a href="perso.html">     </a>
-                        <div >
-                            <h1 class="line">
-                                    Projets <br>Personnels
-                            </h1>
-                        </div>
-                        <div >
-                            <h1 class="norm">
-                                    Projets <br>Personnels
-                            </h1>
-                        </div>
-                        <p>07/07</p>
-                        <div class="midimage">
-                            <div class="imgcarousel">
-                                <img id="img6" onmouseover="setNewImage5()" onmouseout="setOldImage5()" class="img" src="CSS/perso2.jpg">
-                            </div>
-                        </div>
-               
-                    </section>
-               
-              </div>
-            </section>
+            
+           
+
         </div>
 
-              <script>
-                    slider('.slides');
-                  </script>
+            
+    
     </body>
 
   
